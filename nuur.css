@@ -1,0 +1,239 @@
+body{
+    background-color: rgb(22,22,22);
+}
+nav{
+    width:100%;
+    height: 50px;
+    border-bottom: 1px solid #666;
+    justify-content: space-between;
+    display: flex;
+    position:relative;
+}
+img{
+    width: 35%;
+    height: 100%;
+}
+.menu{
+    width:30%;
+    height: 100%;
+}
+ul{
+    display: flex;
+}
+.menu-child{
+    color: #666;
+    font-size: 20px;
+    border-left:1px solid #666;
+}
+.check1{
+    position: absolute;
+    background-color: rgb(39, 170, 231);
+    width:30%;
+    height: 100px;
+    top:60px;
+    z-index: 999;
+    right:10px;
+    display: none;
+    border-radius: 5%;
+}
+input{
+    display: none;
+}
+#checkbox:checked ~ *.check1{
+    display: block;
+}
+.check2{
+    position: absolute;
+    background-color:rgb(22,22,22);
+    width:30%;
+    height: 180px;
+    top:170px;
+    right:10px;
+    display: none;
+    border:1px solid #666;
+    border-radius: 5%;
+}
+.check3{
+    position: absolute;
+    background-color: rgb(22,22,22);
+    width:30%;
+    height:150px;
+    top:360px;
+    right:10px;
+    display: none;
+    border:1px solid #666;
+    border-radius: 5%;
+}
+.a{
+    width:100%;
+    height:30px;
+    border-bottom:1px solid #666 ;
+}
+.b{
+    width:100%;
+    height: 30px;
+}
+#chb:checked~ *.check2{
+    display: block;
+}
+#ckbox:checked~ *.check3{
+    display:block;
+}
+.hailt{
+    width:80%;
+    height: 80px;
+    top:10px;
+    left:10%;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}
+.dad{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
+    margin: 50px;
+}
+.dad img{
+width:90%;
+height: 30vh;
+border: 1px solid gray;
+border-radius:5% ;
+}
+h4{
+position: relative;
+bottom:30%;
+padding-left: 5%;
+padding-right: 10%;
+color: white;
+}
+h4:hover{
+color: dodgerblue;
+}
+.tsaash{
+width:88%;
+height: 5vh;
+background-color: black;
+border-radius: 5%;
+margin: 6%;
+color:#666;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+.tsaash:hover{
+background-color: dodgerblue;
+color: white;
+}
+.haha{
+width:80%;
+margin-left:8%;
+}
+.haha img{
+width: 100%;
+height: 100%;
+}
+h3{
+color: #666;
+}
+.duusgasan{
+margin:3%
+}
+.duus{
+width:90%;
+height:30vh;
+display: flex;
+margin: 3%;
+gap:5px;
+}
+.duus img{
+width:17%;
+height: 100%;
+}
+.dmenu{
+width: 100%;
+height: 55px;
+border-top: 2px solid #666;
+border-bottom: 2px solid #666;
+margin-bottom: 5%;
+display: flex;
+justify-content: flex-end;
+}
+.dmenu ul li {
+width: 30%;
+height:100%;
+border-left:2px solid #666;
+list-style: none;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.dmenu ul{
+width:15%;
+height: 100%;
+display: flex;
+}
+.dmenu ul li i{
+color: #666;
+font-size: 16px;
+}
+
+@media screen and (max-width:820px){
+    body{
+    width: 100%;
+    height: auto;
+    }
+    .dad{
+    
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: repeat(4,120px);
+    margin: 2%;
+    gap:10px;
+    
+    }
+    .dad div img{
+    width:100%;
+    height: 120px;
+    }
+    .dad div h4{
+    font-size: 10px;
+    }
+    .haha img{
+    width:90%;
+    margin-left:30px;
+    }
+    .tsaash{
+    width:88%;
+    height: 5vh;
+    background-color: black;
+    border-radius: 0.5;
+    margin: 6%;
+    color:#666;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+    .duus{
+    width:90%;
+    height:160px;
+    display: flex;
+    margin: 3%;
+    gap:5px;
+    }
+    .duus img{
+    width:17%;
+    height: 100%;
+    }
+    nav{
+    height: 30px;
+    }
+    .menu-child{
+        color: #666;
+        font-size: 20px;
+        border-left:1px solid #666;
+    }
+    h3{
+        font-size: 20px;
+    }
+    }
